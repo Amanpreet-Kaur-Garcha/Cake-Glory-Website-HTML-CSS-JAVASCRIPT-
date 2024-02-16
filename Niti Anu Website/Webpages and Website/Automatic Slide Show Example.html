@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script language = "JavaScript">
+		var image = new Array("../Images/6.jpeg", "../Images/7.jpeg", "../Images/8.jpeg",);
+		var i = 0;
+		var time;
+		function nextClick()
+		{
+			if(i==2)
+				i=0;
+			else
+				i++;
+			document.getElementById("imgChng").src=image[i];
+			display();
+		}
+		function display()
+		{
+			time = window.setTimeout(nextClick, 1000);
+		}
+		function stop()
+		{
+			window.clearTimeout(time);
+		}
+	</script>
+</head>
+<body>
+<form>
+	<center><img src = "../Images/6.jpeg" width = "80%" height = "70%" id = "imgChng" onmouseover="stop();" onmouseout="display();"></center>
+</form>
+</body>
+</html>

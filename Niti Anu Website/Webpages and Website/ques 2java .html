@@ -1,0 +1,23 @@
+
+<html>
+<head>
+<script>
+for (var i = 1; i <= 6; i++) {
+    document.write("<h" + i + "><font color='red'>This is header " + i + "</font></h" + i + ">");
+}
+
+for (var i = 1; i <= 6; i++) {
+    document.write("<h" + i + "><font color='green'>This is header " + i + "</font></h" + i + ">");
+    break;
+}
+
+for (var i = 1; i <= 6; i++) {
+    if (i <= 4)
+        continue;
+    document.write("<h" + i + "><font color='blue'>This is header " + i + "</font></h" + i + ">");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
